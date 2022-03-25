@@ -10,13 +10,13 @@ import unittest
 
 def auto_all():
 
-    start_dir = r'E:\PycharmProjects\0511'
+    start_dir = r'C:\Users\admin\Desktop\PyCharm\接口(最新)'
     discover = unittest.defaultTestLoader.discover(start_dir=start_dir,pattern='te*.py')
 
     now = time.strftime('%Y-%m-%d-%H-%M-%S')
     # print now
 
-    filename =r'E:\PycharmProjects\0511\report'+'\\'+str(now)+'api_report.html'
+    filename =r'C:\Users\admin\Desktop\PyCharm\接口(最新)\report'+'\\'+str(now)+'api_report.html'
     # print filename
 
     f = open(filename,'wb')

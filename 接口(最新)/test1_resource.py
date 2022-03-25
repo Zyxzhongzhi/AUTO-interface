@@ -6,7 +6,7 @@ time:2021/5/14 16:37
 import requests
 from base.test_data import testData as t
 
-url = 'http://172.168.70.195:9901/api/class/get-pp-class-resource'
+url = 'http://172.168.70.195:9789/api/class/get-pp-class-resource'
 data = {
         'class_id': '1',
         'package_id': '2566',
