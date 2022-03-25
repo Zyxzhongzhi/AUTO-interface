@@ -8,7 +8,7 @@ import os
 
 class ReadConfigIni:
     def __init__(self, filename):
-        self.cf = ConfigParser()
+        self.cf = ConfigParser()   # 创建ConfigParser类的对象
         self.cf.read(filename)
 
     def get_ini_data(self, section, option):

@@ -26,6 +26,7 @@ class Yuemi(BasePage):
     @classmethod
     def tearDownClass(cls):
         cls.driver.quit()
+        # BasePage.go_home(p.index)
 
     def test001_login(self):
         driver = BasePage.get_driver()
@@ -55,4 +56,13 @@ class Yuemi(BasePage):
         # print value
         assert value == u'退出'
         sleep(2)
+
+if __name__ == '__main__':
+    unittest.main()
+#     testunit = unittest.TestSuite()#初始化测试用例集合对象，构建测试套件
+#     testunit.addTest(Baidu("test_baidu_search"))#把测试用例加入到测试用力集合中去，将用例加入到检测套件中
+#     fp = open('./result.html','wb')#定义测试报告存放路径
+#     runner = HTMLTestRunner(stream=fp,title='百度搜索测试报告',description='用例执行情况')#定义测试报告
+#     runner.run(testunit)#执行测试用例
+#     fp.close()
 

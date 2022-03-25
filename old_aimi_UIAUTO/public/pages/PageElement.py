@@ -14,6 +14,9 @@ class PageElement:
     loginBtn = ('class', 'sure')
     loginOut = ('xpath','//*[@id="index"]/div[1]/div[2]/div[2]/span[3]/span')
 
+    # 回到首页
+    index = ('xpath', '//*[@id="mn_forum"]/a')
+
     #课堂互动
     #点名
     ketanghudong = ('class','interaction-name')
